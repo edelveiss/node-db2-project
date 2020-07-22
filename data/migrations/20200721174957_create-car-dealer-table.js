@@ -1,5 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable("cars", (tbl) => {
+    //the change we want to make to our schema of a table 'cars'
     tbl.increments("id"); //primary key
     tbl.string("vin", 17).unique().notNullable();
     tbl.string("make").notNullable();
@@ -11,5 +12,6 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
+  //undoing that change, uncreate the table 'cars'
   return knex.schema.dropTableIfExists("cars");
 };
