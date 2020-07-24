@@ -20,6 +20,8 @@ exports.seed = function (knex) {
             make: "Acura",
             model: "ILX",
             mileage: 1200,
+            transmission_type: "not specified",
+            status_title: "clean",
           },
           {
             vin: "qw123456lkdso86de",
@@ -27,7 +29,7 @@ exports.seed = function (knex) {
             model: "4C",
             mileage: 5500,
             transmission_type: "9-speed automatic",
-            status_title: "clean",
+            status_title: "salvage",
           },
           {
             vin: "qw1234567y9i0768u",
@@ -42,6 +44,8 @@ exports.seed = function (knex) {
             make: "BMW",
             model: "2 Series Gran",
             mileage: 30000,
+            transmission_type: "not specified",
+            status_title: "salvage",
           },
           {
             vin: "qw1234567yhe54fde",

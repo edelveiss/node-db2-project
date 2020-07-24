@@ -9,5 +9,12 @@ server.use(helmet());
 server.use(express.json());
 
 server.use("/api/cars", carsRouter);
+//API test
+server.get("/", (req, res) => {
+  res.send(`
+            <h2>Lambda Cars API</h>
+            <p>Welcome to the Lambda Cars API</p>
+          `);
+});
 
 module.exports = server;
